@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicii – Casa Mereuta</title>
+  <meta name="description" content="Serviciile Casa Mereuta: cazare, restaurant, wellness & spa, săli de conferință și organizare evenimente în Sucevița." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#8E44AD",
+            secondary: "#B07CC6",
+            accent: "#6C3483",
+            light: "#f5f5f5",
+            dark: "#0c0e13",
+          },
+          backgroundImage: {
+            "dark-radial-right": "radial-gradient(at center right, #6C3483 10%, #020307 75%)",
+            "dark-radial-left": "radial-gradient(at center left, #6C3483 10%, #020307 75%)",
+            "dark-radial-top": "radial-gradient(at top center, #6C3483 10%, #020307 75%)",
+            "dark-radial-bottom": "radial-gradient(at bottom center, #6C3483 10%, #020307 75%)",
+            "dark-silver-radial": "radial-gradient(at center, #1a1a1a 10%, #2a2a2a 90%)",
+            "card-dark": "linear-gradient(180deg, #1a1f2b 0%, #0c0e13 100%)",
+            "card-dark-hover": "linear-gradient(180deg, #2a3040 0%, #1a1f2b 100%)",
+            "primary-blend": "linear-gradient(135deg, #8E44AD 0%, #020307 100%)",
+            "accent-blend": "linear-gradient(135deg, #6C3483 0%, #000000 100%)",
+          },
+          fontFamily: {
+            sans: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="bg-primary sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-29f1f8fc-44fd-4d8f-8713-3cd5535a67e9-1776668228141.png" alt="Casa Mereuta Logo" class="h-10 w-auto" />
+          <span class="text-white font-bold text-xl hidden sm:block">Casa Mereuta</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-white/80 hover:text-white transition-colors">Acasă</a>
+          <a href="services.html" class="text-white font-semibold border-b-2 border-white pb-0.5">Servicii</a>
+          <a href="about.html" class="text-white/80 hover:text-white transition-colors">Despre</a>
+          <a href="galerie.html" class="text-white/80 hover:text-white transition-colors">Galerie</a>
+          <a href="contact.html" class="text-white/80 hover:text-white transition-colors">Contact</a>
+        </div>
+        <button id="burger" class="md:hidden text-white focus:outline-none" aria-label="Meniu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-accent px-4 pb-4 pt-2 space-y-2">
+      <a href="index.html" class="block text-white/80 hover:text-white py-2">Acasă</a>
+      <a href="services.html" class="block text-white font-semibold py-2">Servicii</a>
+      <a href="about.html" class="block text-white/80 hover:text-white py-2">Despre</a>
+      <a href="galerie.html" class="block text-white/80 hover:text-white py-2">Galerie</a>
+      <a href="contact.html" class="block text-white/80 hover:text-white py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-primary-blend py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-29f1f8fc-44fd-4d8f-8713-3cd5535a67e9-1776668290478.png" alt="" class="w-full h-full object-cover" />
+    </div>
+    <div class="relative max-w-4xl mx-auto px-4 text-center fade-in">
+      <span class="text-secondary font-semibold uppercase tracking-widest text-sm">Casa Mereuta</span>
+      <h1 class="text-5xl font-extrabold text-white mt-3 mb-4">Serviciile Noastre</h1>
+      <p class="text-white/70 text-xl max-w-2xl mx-auto">Descoperă gama completă de servicii premium oferite la Casa Mereuta din Sucevița, Bucovina.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED SERVICE -->
+  <section class="bg-dark-radial-top py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="fade-in">
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-29f1f8fc-44fd-4d8f-8713-3cd5535a67e9-1776668290478.png" alt="Cazare Casa Mereuta" class="rounded-3xl shadow-2xl w-full object-cover" />
+        </div>
+        <div class="fade-in">
+          <span class="text-primary font-semibold uppercase tracking-widest text-sm">Serviciu Principal</span>
+          <h2 class="text-4xl font-bold text-white mt-3 mb-6">Cazare de Lux în Inima Bucovinei</h2>
+          <p class="text-white/70 text-lg mb-6">Casa Mereuta oferă 32 de camere și apartamente elegante, fiecare proiectată pentru a asigura confort maxim și o conexiune autentică cu natura înconjurătoare. Fie că ești în vacanță sau în deplasare de afaceri, găsești la noi tot ce ai nevoie.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-white/80"><span class="text-primary text-xl">✓</span> Camere standard, superior și apartamente suite</li>
+            <li class="flex items-center gap-3 text-white/80"><span class="text-primary text-xl">✓</span> Wi-Fi gratuit în toată unitatea</li>
+            <li class="flex items-center gap-3 text-white/80"><span class="text-primary text-xl">✓</span> Vedere panoramică spre munți</li>
+            <li class="flex items-center gap-3 text-white/80"><span class="text-primary text-xl">✓</span> Parcare gratuită, recepție 24/7</li>
+          </ul>
+          <a href="contact.html" class="bg-primary hover:bg-accent text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 inline-block">Rezervă Acum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="bg-card-dark py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <span class="text-primary font-semibold uppercase tracking-widest text-sm">Tot ce ai nevoie</span>
+        <h2 class="text-4xl font-bold text-white mt-2">Toate Serviciile Noastre</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Cazare -->
+        <div class="bg-card-dark hover:bg-card-dark-hover border border-white/5 rounded-2xl p-8 hover:scale-105 hover:shadow-xl transition-all duration-300 fade-in" data-category="cazare">
+          <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-3xl mb-6">🛏️</div>
+          <h3 class="text-xl font-bold text-white mb-3">Cazare</h3>
+          <p class="text-white/60">32 de camere și apartamente elegante cu dotări moderne, lenjerie premium și vedere spre natură. Serviciu de room service disponibil 24/7 pentru confortul dumneavoastră.</p>
+        </div>
+
+        <!-- Restaurant -->
+        <div class="bg-card-dark hover:bg-card-dark-hover border border-white/5 rounded-2xl p-8 hover:scale-105 hover:shadow-xl transition-all duration-300 fade-in" data-category="restaurant">
+          <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-3xl mb-6">🍽️</div>
+          <h3 class="text-xl font-bold text-white mb-3">Restaurant</h3>
+          <p class="text-white/60">Restaurantul nostru îmbină gastronomia bucovinenă autentică cu preparate internaționale rafinare. Ingrediente locale, rețete tradiționale și o atmosferă caldă vă așteaptă în fiecare zi.</p>
+        </div>
+
+        <!-- Wellness & Spa -->
+        <div class="bg-card-dark hover:bg-card-dark-hover border border-white/5 rounded-2xl p-8 hover:scale-105 hover:shadow-xl transition-all duration-300 fade-in" data-category="wellness">
+          <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-3xl mb-6">💆</div>
+          <h3 class="text-xl font-bold text-white mb-3">Wellness & Spa</h3>
+          <p class="text-white/60">Centrul spa include saună, jacuzzi, masaje terapeutice și tratamente de înfrumusețare. Specialiștii noștri certificați vă vor oferi relaxare completă după o zi de explorare.</p>
+        </div>
+
+        <!-- Săli de Conferință -->
+        <div class="bg-card-dark hover:bg-card-dark-hover border border-white/5 rounded-2xl p-8 hover:scale-105 hover:shadow-xl transition-all duration-300 fade-in" data-category="conferinta">
+          <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-3xl mb-6">🏛️</div>
+          <h3 class="text-xl font-bold text-white mb-3">Săli de Conferință</h3>
+          <p class="text-white/60">Două săli de conferință complet echipate cu proiector 4K, sistem audio profesional și catering la cerere. Perfecte pentru întâlniri de afaceri, training-uri și workshop-uri corporate.</p>
+        </div>
+
+        <!-- Evenimente -->
+        <div class="bg-card-dark hover:bg-card-dark-hover border border-white/5 rounded-2xl p-8 hover:scale-105 hover:shadow-xl transition-all duration-300 fade-in" data-category="evenimente">
+          <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-3xl mb-6">🎊</div>
+          <h3 class="text-xl font-bold text-white mb-3">Evenimente</h3>
+          <p class="text-white/60">Organizăm nunți, botezuri, aniversări și petreceri corporate la standarde înalte. Sala noastră de evenimente cu capacitate de 200 persoane și echipa dedicată garantează un eveniment memorabil.</p>
+        </div>
+
+        <!-- Turism local -->
+        <div class="bg-card-dark hover:bg-card-dark-hover border border-white/5 rounded-2xl p-8 hover:scale-105 hover:shadow-xl transition-all duration-300 fade-in" data-category="turism">
+          <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-3xl mb-6">🗺️</div>
+          <h3 class="text-xl font-bold text-white mb-3">Turism Local</h3>
+          <p class="text-white/60">Organizăm excursii ghidate la mănăstirile din Bucovina, drumeții în munți și vizite culturale. Descoperiți frumusețile zonei cu ajutorul ghizilor noștri locali experimentați.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK PROCESS -->
+  <section class="bg-dark-radial-bottom py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <span class="text-primary font-semibold uppercase tracking-widest text-sm">Procesul Nostru</span>
+        <h2 class="text-4xl font-bold text-white mt-2">Cum Funcționează</h2>
+        <p class="text-white/60 mt-4">Rezervarea la Casa Mereuta este simplă și rapidă. Urmați acești pași simpli.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">1</div>
+          <h3 class="text-white font-bold text-lg mb-2">Contactați-ne</h3>
+          <p class="text-white/60 text-sm">Sunați, trimiteți un email sau completați formularul de contact cu datele sejurului dorit.</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">2</div>
+          <h3 class="text-white font-bold text-lg mb-2">Planificare</h3>
+          <p class="text-white/60 text-sm">Echipa noastră vă propune cel mai potrivit pachet în funcție de preferințele și bugetul dvs.</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">3</div>
+          <h3 class="text-white font-bold text-lg mb-2">Confirmare</h3>
+          <p class="text-white/60 text-sm">Confirmați rezervarea și primiți toate detaliile sejurului pe email, inclusiv informații de acces.</p>
+        </div>
+        <div class="text-center fade-in">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">4</div>
+          <h3 class="text-white font-bold text-lg mb-2">Bucurați-vă</h3>
+          <p class="text-white/60 text-sm">Sosiți și lăsați-vă răsfățați de echipa noastră. Totul este pregătit pentru confortul dumneavoastră.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Q&A ACCORDION -->
+  <section class="bg-card-dark py-20">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <span class="text-primary font-semibold uppercase tracking-widest text-sm">Întrebări Frecvente</span>
+        <h2 class="text-4xl font-bold text-white mt-2">Q &amp; A</h2>
+        <p class="text-white/60 mt-4">Găsiți răspunsurile la cele mai frecvente întrebări despre serviciile noastre.</p>
+      </div>
+      <div class="space-y-4 fade-in" id="faq-accordion">
+
+        <!-- Item 1 -->
+        <div class="border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/10 transition-colors focus:outline-none" aria-expanded="false">
+            <span class="text-white font-semibold text-base">Care este ora de check-in și check-out?</span>
+            <svg class="faq-icon w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 pt-3 bg-white/5">
+            <p class="text-white/60 text-sm leading-relaxed">Check-in-ul se face începând cu ora 14:00, iar check-out-ul până la ora 12:00. La cerere și în funcție de disponibilitate, putem oferi early check-in sau late check-out fără costuri suplimentare.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/10 transition-colors focus:outline-none" aria-expanded="false">
+            <span class="text-white font-semibold text-base">Este micul dejun inclus în prețul cazării?</span>
+            <svg class="faq-icon w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 pt-3 bg-white/5">
+            <p class="text-white/60 text-sm leading-relaxed">Micul dejun este inclus în pachetele standard și superior. Apartamentele suite includ mic dejun și cină. Pachetele pot fi personalizate la cerere pentru a include toate mesele zilei.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/10 transition-colors focus:outline-none" aria-expanded="false">
+            <span class="text-white font-semibold text-base">Sunt permise animalele de companie?</span>
+            <svg class="faq-icon w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 pt-3 bg-white/5">
+            <p class="text-white/60 text-sm leading-relaxed">Da, Casa Mereuta acceptă animale de companie de talie mică și medie în camerele desemnate, cu o taxă suplimentară de 50 RON/noapte. Vă rugăm să ne informați la rezervare dacă veți fi însoțiți de un animal de companie.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/10 transition-colors focus:outline-none" aria-expanded="false">
+            <span class="text-white font-semibold text-base">Cum pot accesa centrul Wellness &amp; Spa?</span>
+            <svg class="faq-icon w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 pt-3 bg-white/5">
+            <p class="text-white/60 text-sm leading-relaxed">Centrul Wellness &amp; Spa este disponibil tuturor oaspeților cazați între orele 08:00 și 22:00. Tratamentele și masajele se programează în prealabil la recepție. Accesul la saună și jacuzzi este inclus în prețul cazării.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/10 transition-colors focus:outline-none" aria-expanded="false">
+            <span class="text-white font-semibold text-base">Există parcare gratuită la pensiune?</span>
+            <svg class="faq-icon w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 pt-3 bg-white/5">
+            <p class="text-white/60 text-sm leading-relaxed">Da, dispunem de parcare gratuită supravegheată video, cu capacitate de 40 de locuri, disponibilă exclusiv pentru oaspeții cazați. Parcarea este accesibilă 24/7 pe toată durata sejurului.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/10 transition-colors focus:outline-none" aria-expanded="false">
+            <span class="text-white font-semibold text-base">Puteți organiza evenimente private sau nunți?</span>
+            <svg class="faq-icon w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 pt-3 bg-white/5">
+            <p class="text-white/60 text-sm leading-relaxed">Absolut! Organizăm nunți, botezuri, aniversări și evenimente corporate cu până la 200 de persoane. Echipa noastră dedicată se ocupă de toate detaliile, de la decoruri și catering până la muzică și fotografii. Contactați-ne pentru o ofertă personalizată.</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left bg-white/5 hover:bg-white/10 transition-colors focus:outline-none" aria-expanded="false">
+            <span class="text-white font-semibold text-base">Care este politica de anulare a rezervărilor?</span>
+            <svg class="faq-icon w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 pt-3 bg-white/5">
+            <p class="text-white/60 text-sm leading-relaxed">Rezervările pot fi anulate gratuit cu cel puțin 48 de ore înainte de data sosirii. Anulările efectuate în mai puțin de 48 de ore sau neprezentările sunt taxate cu valoarea primei nopți de cazare. Pentru grupuri și evenimente, politica de anulare poate diferi.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-accent-blend py-20">
+    <div class="max-w-3xl mx-auto px-4 text-center fade-in">
+      <h2 class="text-4xl font-bold text-white mb-6">Ai Nevoie de Serviciile Noastre?</h2>
+      <p class="text-white/70 text-lg mb-8">Contactați-ne acum pentru o ofertă personalizată. Suntem disponibili 24/7 pentru a vă oferi experiența perfectă.</p>
+      <a href="contact.html" class="bg-primary hover:bg-accent text-white font-bold px-10 py-4 rounded-full text-lg transition-all hover:scale-105 inline-block shadow-xl">Solicită Ofertă</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-card-dark border-t border-white/5 pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="https://akiojiswhqnjiuwdciof.supabase.co/storage/v1/object/public/site-images/ai-29f1f8fc-44fd-4d8f-8713-3cd5535a67e9-1776668228141.png" alt="Casa Mereuta" class="h-12 w-auto mb-4" />
+          <p class="text-white/60 text-sm leading-relaxed">Pensiune de lux în Sucevița, Bucovina. Vă așteptăm pentru o experiență de neuitat.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-lg">Link-uri Rapide</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-white/60 hover:text-primary transition-colors text-sm">Acasă</a></li>
+            <li><a href="services.html" class="text-white/60 hover:text-primary transition-colors text-sm">Servicii</a></li>
+            <li><a href="about.html" class="text-white/60 hover:text-primary transition-colors text-sm">Despre Noi</a></li>
+            <li><a href="galerie.html" class="text-white/60 hover:text-primary transition-colors text-sm">Galerie</a></li>
+            <li><a href="contact.html" class="text-white/60 hover:text-primary transition-colors text-sm">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-lg">Servicii</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-white/60 hover:text-primary transition-colors text-sm">Cazare</a></li>
+            <li><a href="services.html" class="text-white/60 hover:text-primary transition-colors text-sm">Restaurant</a></li>
+            <li><a href="services.html" class="text-white/60 hover:text-primary transition-colors text-sm">Wellness & Spa</a></li>
+            <li><a href="services.html" class="text-white/60 hover:text-primary transition-colors text-sm">Săli de Conferință</a></li>
+            <li><a href="services.html" class="text-white/60 hover:text-primary transition-colors text-sm">Evenimente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-lg">Contact & Social</h4>
+          <ul class="space-y-2 mb-5">
+            <li class="text-white/60 text-sm">📍 Str. Stefan cel Mare Nr.88, Sucevița</li>
+            <li><a href="tel:+073999999" class="text-white/60 hover:text-primary transition-colors text-sm">📞 +073999999</a></li>
+            <li><a href="mailto:destinents@destine.app" class="text-white/60 hover:text-primary transition-colors text-sm">✉️ destinents@destine.app</a></li>
+          </ul>
+          <div class="flex gap-4">
+            <a href="https://www.facebook.com/p/%F0%9D%91%B2%F0%9D%91%B3%F0%9D%91%AB-%F0%9D%91%A9%F0%9D%91%AC%F0%9D%91%A8%F0%9D%91%BC%F0%9D%91%BB%F0%9D%92%80-%F0%9D%91%AA%F0%9D%91%B3%F0%9D%91%B0%F0%9D%91%B5%F0%9D%91%B0%F0%9D%91%AA-61584744534607" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background-color:#1877F2">
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/kld_beauty_clinic/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="background-color:#E1306C">
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-white/40 text-sm">© 2024 Casa Mereuta. Toate drepturile rezervate.</p>
+        <div class="flex gap-6 text-sm">
+          <a href="termeni.html" class="text-white/40 hover:text-primary transition-colors">Termeni și Condiții</a>
+          <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer" class="text-white/40 hover:text-primary transition-colors">ANPC</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING PHONE BUTTON -->
+  <a href="tel:+073999999" class="fixed bottom-24 left-5 z-50 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform group" aria-label="Sună acum">
+    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    <span class="tooltip-label">Sună acum</span>
+  </a>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/073999999" target="_blank" rel="noopener noreferrer" class="fixed bottom-5 left-5 z-50 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform group" style="background-color:#25D366" aria-label="WhatsApp">
+    <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="tooltip-label">WhatsApp</span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="fixed bottom-5 right-5 z-50 w-12 h-12 bg-primary rounded-full hidden items-center justify-center shadow-lg hover:scale-110 transition-all" aria-label="Înapoi sus">
+    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var answer = this.nextElementSibling;
+        var icon = this.querySelector('.faq-icon');
+        var isOpen = !answer.classList.contains('hidden');
+
+        // Close all
+        document.querySelectorAll('.faq-answer').forEach(function(a) {
+          a.classList.add('hidden');
+        });
+        document.querySelectorAll('.faq-btn').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+          b.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+        });
+
+        // Open clicked if it was closed
+        if (!isOpen) {
+          answer.classList.remove('hidden');
+          this.setAttribute('aria-expanded', 'true');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
